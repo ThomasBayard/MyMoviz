@@ -6,8 +6,8 @@ const movieModel = require('../models/movies');
 
 const request = require('request');
 
-// API KEY API THE MOVIEDB
-const apiKey = '945d7ebd5dbc6046d9962823d767ebfa';
+// API KEY API THE MOVIEDB => A récuperer directement sur le site 
+const apiKey = '';
 
 // PAGE D'ACCEUIL BACKEND
 router.get('/', function(req, res, next) {
