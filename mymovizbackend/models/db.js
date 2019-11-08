@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // ma base de donnée
-const dbUrl = 'mongodb+srv://Capsule:Magiksysteme@thomasbayardcapsule-6nyun.mongodb.net/mymovizApp?retryWrites=true';
+const dbUrl = '';
 /* --------------------- */
 
 const options = {
