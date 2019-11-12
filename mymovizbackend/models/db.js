@@ -1,22 +1,21 @@
 const mongoose = require('mongoose');
 
-// ma base de donnée
-const dbUrl = '';
-/* --------------------- */
-
-const options = {
-  connectTimeoutMS: 5000,
-  useNewUrlParser: true
+// useNewUrlParser ;)
+var options = {
+    connectTimeoutMS: 5000,
+    useNewUrlParser: true,
 };
 
-mongoose.connect(dbUrl, options, error => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('Serveur DB connecté')
-  }
-});
+// Ne pas oublier de mettre l'API pour se connecter à la BDD 
+mongoose.connect('',
+    options,
+    function(err) {
+        if (err) {
+            console.log(`Erreur de connexion à la BDD --> ${err}`);
+        } else {
+            console.info('Succes connexion à la BDD');
+        }
+    }
+);
 
-module.exports = {
-  mongoose: mongoose,
-}
+module.exports = mongoose;
