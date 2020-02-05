@@ -53,8 +53,7 @@ class App extends Component {
 
         // Vérification click
         console.log("click détected from App");
-
-        // Copy Tableau
+        
         var moviesNameListCopy = [...this.state.moviesNameList];
 
         // Mise à jour compteur 
@@ -143,8 +142,6 @@ class App extends Component {
         var moviesLast;
 
         console.log(`Here is moviesLast : ${moviesLast}`)
-
-        // (BEST) TECHNIQUE N°2 to display the last 3 movies we liked ------*
 
         let moviesLast = this.state.moviesNameList.slice(-3)
         if (this.state.moviesCount === 0) {
